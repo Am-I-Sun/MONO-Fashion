@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #111;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 20px 60px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo, a{
+    text-decoration: none;
+    font-size: 34px;
+    font-weight: bold;
+    color: #111;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 20px;
+}
+
+.cart {
+    font-size: 20px;
+    color: #555;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* HERO */
+.hero {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 30px;
+    text-decoration: none;
+    border: 1px solid #111;
+    color: #111;
+    font-size: 14px;
+}
+
+
+/*about*/
+.about {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 2;      /* Adjust this number for more or less space */
+  max-width: 50rem;      /* Keeps the text block from getting too wide */
+  margin: 0 auto;        /* Centers the whole block on the page */
+  padding: 50px 0;       /* Adds space above and below the text */
+}
+
+
+/* PRODUCTS */
+.products {
+    padding: 80px;
+}
+
+.products h2 {
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+}
+
+.product-card p {
+    color: #666;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    font-size: 14px;
+    color: #777;
+}
+
+.big-footer {
+    background: #121212;
+    padding: 80px 5% 40px 5%;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    margin-bottom: 80px;
+}
+
+.footer-logo {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.footer-brand-info p {
+    max-width: 350px;
+    line-height: 1.6;
+    color: #888888;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.link-column h3 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    color: #c5a47e;
+}
+
+.link-column ul li{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.link-column ul li a {
+    font-size: small;
+    color: #c1c1b5;
+    text-decoration: none;
+}
+
+.link-column ul li a:hover {
+    color: #ffffff;
+}
+
+/* Newsletter Styles */
+.newsletter-form {
+    display: flex;
+    margin-top: 20px;
+    border-bottom: 1px solid #555;
+}
+
+.newsletter-form input {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    outline: none;
+    font-size: smaller;
+}
+
+.newsletter-form button {
+    background: transparent;
+    border: none;
+    font-size: small;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 40px;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+    color: #555;
+}
+
+.legal a {
+    margin-left: 20px;
+    color: #555;
+    text-decoration: none;
+    font-size: small;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .footer-links {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
